@@ -1,0 +1,66 @@
+
+
+body {
+    margin: 10px 10%;
+    background-color: lightgray;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 300%;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+h2 {
+    clear: both;
+    padding: 0.2rem 0.5rem;
+    background-color: gray;
+    color: white;
+    font-size: 200%;
+}
+
+p {
+    margin-right: 10%;
+    margin-left: 10%;
+    text-indent: 2rem;
+}
+
+img {
+    width: 120px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+strong {
+    background-color: white;
+}
+
+em {
+    color: red;
+}
+
+/*
+
+YA ME ACORDE COMO USAR LAS CLASES
+
+*/
+/*
+.contenedor{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.contenedor img{
+    
+    margin: 20px;
+    text-align: justify;
+
+}
+.contenedor p{
+    margin: 50px;
+    text-align: justify;
+
+
+}

@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+
+}
+body::before{
+    content: "";
+    background-image: url(imagenes/cssbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+.contenedor{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.ficha{
+    margin:0.3rem;
+    padding: clamp(0.4rem, 2vw, 0.8rem);
+    background-color: rgba(185, 139, 255, 0.8);
+    border: 0.3rem solid rgb(24, 15, 201);
+    border-radius: 3rem;
+    transition: all 0.4s ease;
+    flex: 1 1 300px; /* Crecer, encoger, base 300px */
+    max-width: 400px; /* Ancho máximo por ficha */
+    min-width: 250px; /* Ancho mínimo */
+}
+.ficha:hover{
+    transform: scale(1.1); /* 10% más grande */ 
+}
+/*poderosisimo para los links sin que se vean*/
+.ficha-link{
+    text-decoration: none; /*ma' bonito*/
+    color: inherit;
+    display: block;
+}

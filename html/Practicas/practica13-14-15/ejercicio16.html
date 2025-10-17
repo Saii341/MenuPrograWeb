@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 15: Formulario</title>
+</head>
+<body>
+    <h2>FORMULARIO</h2>
+    
+    <form action="mailto:187926@upslp.edu.mx" method="post" enctype="text/plain">
+        <label for="name">Nombre completo:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <p>Elige tu preferencia de comida:</p>
+        <input type="radio" id="vegetarian" name="meal" value="vegetarian" required>
+        <label for="vegetarian">Vegetariano</label><br>
+        
+        <input type="radio" id="non-vegetarian" name="meal" value="non-vegetarian">
+        <label for="non-vegetarian">No vegetariano</label><br><br>
+        
+        <p>Selecciona los talleres a los que te gustaría asistir:</p>
+        <input type="checkbox" id="workshop1" name="workshop1" value="yes">
+        <label for="workshop1">Taller 1</label><br>
+        
+        <input type="checkbox" id="workshop2" name="workshop2" value="yes">
+        <label for="workshop2">Taller 2</label><br>
+        
+        <input type="checkbox" id="workshop3" name="workshop3" value="yes">
+        <label for="workshop3">Taller 3</label><br><br>
+        
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
