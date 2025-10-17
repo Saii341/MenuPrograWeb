@@ -1,0 +1,120 @@
+/*para la fuentesilla */
+.poller-one-regular {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*
+header{
+    background-color: rgb(133, 122, 123);
+    text-align: center;
+    font-family: "Poller One", serif;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}*/
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+/*eeeepico, esto hace que tenga el efecto de trasnparencia por el contenido creado */
+body::before{
+    content: "";
+    background-image: url(imagenes/tanjiro-demon-slayer-4k-wallpaper-uhdpaper.com-938@5@g.jpg);
+    
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1; /*lo posiciona hasta atras*/
+}
+
+.title1{
+    margin: 1rem;
+    padding: 1rem 3rem;
+    text-align: center;
+    
+    background-color: rgba(112, 100,130, 0.8);
+    border: 0.3rem solid rgba(112, 100,130, 3.9);
+    border-radius: 1.5rem;
+    font-size: clamp(1.5rem,4vw,3rem);
+}
+.contenedor{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.ficha{
+    margin:1rem;
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: rgba(112, 100,130, 0.8);
+    border: 0.3rem solid rgba(90, 30,70, 1);
+    border-radius: 3rem;
+    transition: all 0.4s ease;
+    flex: 1 1 300px; /* Crecer, encoger, base 300px */
+    max-width: 400px; /* Ancho máximo por ficha */
+    min-width: 250px; /* Ancho mínimo */
+}
+.ficha:hover{
+    transform: scale(1.1); /* 10% más grande */ 
+}
+/*poderosisimo para los links sin que se vean*/
+.ficha-link{
+    text-decoration: none; /*ma' bonito*/
+    color: inherit;
+    display: block;
+}
+.logo{
+    max-height: 200px;
+    max-width: 100%;
+    padding: 30px;
+    height: auto;
+}
+/* Móviles (480px para abajo) */
+@media (max-width: 480px) {
+    .contenedor {
+        flex-direction: column; /* Una ficha por fila */
+        align-items: center;
+        padding-top: 20px;
+        gap: 10px;
+    }
+    
+    .ficha {
+        margin: 10px;
+        padding: 15px;
+        width: 80%; /* Ocupa 80% del ancho */
+        max-width: 300px;
+    }
+    
+    .logo {
+        max-height: 120px;
+        padding: 15px;
+    }
+    
+    .title1 {
+        margin: 5px;
+        padding: 5px 20px;
+        font-size: 1.2em;
+        border-radius: 15px;
+    }
+    
+    .title2 {
+        font-size: 1em;
+    }
+}
